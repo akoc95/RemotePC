@@ -32,16 +32,16 @@ namespace Mobile
         private async void VolumeUp_Clicked(object sender, EventArgs e) => await SendCommand("volume_up");
         private async void Shutdown_Clicked(object sender, EventArgs e) => await SendCommand("shutdown");
 
-        private async void Youtube_Clicked(object sender, EventArgs e)
+        private async void Url_Clicked(object sender, EventArgs e)
         {
-            string youtubeUrl = YoutubeEntry.Text;
-            if (string.IsNullOrEmpty(youtubeUrl) || !youtubeUrl.Contains("youtube.com"))
+            string url = UrlEntry.Text;
+            if (string.IsNullOrEmpty(url))
             {
-                await DisplayAlert("Hata", "Lütfen geçerli bir YouTube URL'si girin.", "Tamam");
+                await DisplayAlert("Hata", "Lütfen geçerli bir URL girin.", "Tamam");
                 return;
             }
 
-            await SendCommand($"youtube:{youtubeUrl}");
+            await SendCommand($"url:{url}");
         }
 
         private async Task SendCommand(string command)

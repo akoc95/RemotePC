@@ -35,7 +35,7 @@ namespace TCPListener
                 "volume_up" => "(New-Object -ComObject WScript.Shell).SendKeys([char]175)", // Ses açma
                 "volume_down" => "(New-Object -ComObject WScript.Shell).SendKeys([char]174)", // Ses kısmak
                 "shutdown" => "shutdown /s /t 10", // Bilgisayarı kapatma
-                var cmd when cmd.StartsWith("youtube:") => $"Start-Process '{cmd.Substring(8)}'",
+                var cmd when cmd.StartsWith("url:") => $"Start-Process '{cmd.Substring(4)}'",
                 _ => null // Geçersiz komut
             };
 

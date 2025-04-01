@@ -28,9 +28,9 @@
         <Button Text="Ses Aç" Clicked="VolumeUp_Clicked"/>
         <!-- Direk video veya müzik açmak için boş bırakmayın. -->
         <Border StrokeShape="RoundRectangle 5">
-            <Entry x:Name="YoutubeEntry" Placeholder="YouTube URL"/>
+            <Entry x:Name="UrlEntry" Placeholder="URL giriniz..."/>
         </Border>
-        <Button Text="Youtube Aç" Clicked="Youtube_Clicked" BackgroundColor="Red"/>
-        <Button Text="Bilgisayarı Kapat" Clicked="Shutdown_Clicked" BackgroundColor="Black"/>
+        <Button Text="Url Aç" Clicked="Url_Clicked" BackgroundColor="Red"/>
+        <Button Text="Bilgisayarı Kapat" Clicked="Shutdown_Clicked" BackgroundColor="DimGray"/>
     </VerticalStackLayout>
 </ContentPage>
