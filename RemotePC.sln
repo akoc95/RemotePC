@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mobile", "Mobile\Mobile.csproj", "{A6C2BB9C-F2B2-46E2-A633-B6409324BC40}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{698842B3-19C0-46DF-9814-CB8C37AA8173}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "android", "android", "{0512F06C-6D85-4571-8805-BB850227E794}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "desktop", "desktop", "{2D635CCC-9C38-4A34-B3AC-388E4E97863E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCPListener", "TCPListener\TCPListener.csproj", "{BBCF6736-B926-47BA-B6CA-0B8A6E256D4E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A6C2BB9C-F2B2-46E2-A633-B6409324BC40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6C2BB9C-F2B2-46E2-A633-B6409324BC40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6C2BB9C-F2B2-46E2-A633-B6409324BC40}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{A6C2BB9C-F2B2-46E2-A633-B6409324BC40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6C2BB9C-F2B2-46E2-A633-B6409324BC40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6C2BB9C-F2B2-46E2-A633-B6409324BC40}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{BBCF6736-B926-47BA-B6CA-0B8A6E256D4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBCF6736-B926-47BA-B6CA-0B8A6E256D4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBCF6736-B926-47BA-B6CA-0B8A6E256D4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBCF6736-B926-47BA-B6CA-0B8A6E256D4E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A6C2BB9C-F2B2-46E2-A633-B6409324BC40} = {0512F06C-6D85-4571-8805-BB850227E794}
+		{0512F06C-6D85-4571-8805-BB850227E794} = {698842B3-19C0-46DF-9814-CB8C37AA8173}
+		{2D635CCC-9C38-4A34-B3AC-388E4E97863E} = {698842B3-19C0-46DF-9814-CB8C37AA8173}
+		{BBCF6736-B926-47BA-B6CA-0B8A6E256D4E} = {2D635CCC-9C38-4A34-B3AC-388E4E97863E}
+	EndGlobalSection
+EndGlobal
