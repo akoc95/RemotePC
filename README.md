@@ -2,17 +2,18 @@
 
 Bu uygulama ne yapıyor?
 
-Aynı ağda bulunan bilgisayarınızın Android telefonunuz üzerinden ses açma, kapatma, bilgisayar kapatma ve youtube ile url açma gibi basit işleri yapıyor. 
-Uygulamayı yaklaşık 20 dakika gibi kısa bir sürede yazdım, bu yüzden kapsamı sınırlıdır.
+Aynı ağda bulunan bilgisayarınızın Android telefonunuz üzerinden ses açma, kapatma, bilgisayar kapatma ve url açma(YouTube, Spotify vs) gibi basit işleri yapıyor. 
+
+Uygulamayı .NET MAUI ile yaklaşık 20 dakika gibi kısa bir sürede yazdım, bu yüzden kapsamı sınırlı. 
+
 Sesi tamamen kapatma, tarayıcı kapama gibi ek işlemi ihtiyaçlarınıza göre uyarlayabilirsiniz. UI tarafını da dilediğiniz gibi düzenleyebilirsiniz.
 
-Nasıl çalışır?
-TCPListener uygulamasını ilgili cihazda çalıştırın.
-Android uygulamasında cihazın(bilgisayar) IP adresini ve açık portu giriniz. Girilen portun açık olduğundan emin olun.
-TCPListener açık değilse, komutları yakalayamaz.
+Güncelleme
+UI Tarafında basit düzeltmeler ve dokunmatik ekran üzerinden yapılan sürükleme hareketlerini yakalayıp, arka planda bir TCP bağlantısı aracılığıyla ilgili komutu masaüstüne gönderiyor. Aynı zamanda kullanıcı etkileşimlerini görselleştirmek için ekranda kaybolan bir iz (trail effect) animasyonu kullanıyorum. 
 
-Not: Bilgisayar ve Cep telefonunuz aynı ağda olmalı.
-
-İsteğe bağlı olarak PR gönderebilirsiniz.
-
-Ayrıca, TCPListener yerine cihazınıza uzaktan erişim açarsanız ara yazılıma gerek kalmadan doğrudan komutları gönderebilirsiniz. Güvenlik sebepleriyle o şekilde yazmadım.
+Temel Özellikler:
+Dokunmatik hareketi algılama (drag detection)
+Ekranda iz bırakma (fade-out animation ile)
+TCP üzerinden komut gönderimi (mouse_move, mouse_click)
+Sağ ve sol tıklama butonları
+Gerçek zamanlı ve performanslı çizim
