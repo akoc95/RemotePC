@@ -1,5 +1,4 @@
-# RemotePC - Üşengeçler için yeni tool :)
-Not: Bilgisayar ve Cep telefonunuz aynı ağda olmalı.
+# RemotePC
 
 Bu uygulama ne yapıyor?
 
@@ -11,6 +10,8 @@ Nasıl çalışır?
 TCPListener uygulamasını ilgili cihazda çalıştırın.
 Android uygulamasında cihazın(bilgisayar) IP adresini ve açık portu giriniz. Girilen portun açık olduğundan emin olun.
 TCPListener açık değilse, komutları yakalayamaz.
+
+Not: Bilgisayar ve Cep telefonunuz aynı ağda olmalı.
 
 İsteğe bağlı olarak PR gönderebilirsiniz.
 
