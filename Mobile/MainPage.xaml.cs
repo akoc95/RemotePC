@@ -31,7 +31,6 @@ namespace Mobile
         private async void VolumeDown_Clicked(object sender, EventArgs e) => await SendCommand("volume_down");
         private async void VolumeUp_Clicked(object sender, EventArgs e) => await SendCommand("volume_up");
         private async void Shutdown_Clicked(object sender, EventArgs e) => await SendCommand("shutdown");
-
         private async void Url_Clicked(object sender, EventArgs e)
         {
             string url = UrlEntry.Text;
@@ -65,6 +64,11 @@ namespace Mobile
             {
                 await DisplayAlert("Hata", $"Bağlantı hatası: {ex.Message}", "Tamam");
             }
+        }
+
+        private async void MouseControl_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new MouseControl());
         }
     }
 }
