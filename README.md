@@ -1,6 +1,6 @@
 <h1>RemotePC</h1>
 
-<h2>📱 Uygulama Nedir?</h2>
+<h2>📱 Bu Uygulama Nedir?</h2>
 <p>
 RemotePC, Android telefonunuzdan aynı ağda bulunan bilgisayarınıza basit uzaktan komutlar gönderebilmenizi sağlar.
 Ses açma/kapatma, bilgisayar kapatma ve URL açma (örneğin YouTube, Spotify gibi) gibi işlemleri kolaylıkla gerçekleştirebilirsiniz.
